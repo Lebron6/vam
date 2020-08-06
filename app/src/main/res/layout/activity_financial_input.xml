@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top"
+        android:background="@color/colorTheme" />
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/colorTheme">
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:gravity="left|center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x44"
+                android:layout_height="@dimen/x44"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@mipmap/icon_back_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Hello"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/x36" />
+
+        <LinearLayout
+            android:id="@+id/layout_commit"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x21"
+                android:text="完成"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/x30" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x102"
+        android:background="@color/colorTheme">
+
+        <RelativeLayout
+            android:id="@+id/layout_show_time_window"
+            android:layout_width="@dimen/x702"
+            android:layout_height="@dimen/x60"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/layout_bg_time_select">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:text="-"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/x36" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x12"
+                android:background="@mipmap/icon_down_w" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/y970" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv_to_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x108"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x24">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="公司收入"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x36" />
+
+                    <ImageView
+                        android:id="@+id/image_add_income_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/icon_add"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/colorShollwGray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_financial_income"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x108"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="@dimen/x23">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公司支出"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x36" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/icon_add"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/colorShollwGray" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_financial_output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x108"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/x24">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="部门支出"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x36" />
+
+                    <ImageView
+                        android:id="@+id/image_add_income_bumen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/icon_add"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x1"
+                    android:background="@color/colorShollwGray" />
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_financial_bumen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x24"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginBottom="@dimen/x20"></android.support.v7.widget.RecyclerView>
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/x1"-->
+                    <!--android:layout_marginTop="@dimen/x80"-->
+                    <!--android:background="@color/colorShollwGray" />-->
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

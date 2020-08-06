@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<ScrollView
+    android:scrollbars="none"    android:layout_marginTop="@dimen/x74"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+<TextView
+        android:textSize="@dimen/x32"
+    android:layout_alignParentLeft="true"
+    android:textColor="@color/colorTheme"
+    android:text="任务名称"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_task_name"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorTextGray"
+                android:text="-"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="预计完成时间"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_finish_time"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorTextGray"
+                android:text="-"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="分配积分"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_distribution_integral"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorTextGray"
+                android:text="-"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="最终积分"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_final_integral"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorTextGray"
+                android:text="-"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="提示说明："
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+          
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_tips"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x160"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/et_bg_gray"
+            android:padding="@dimen/x24"
+            android:textColor="@color/colorTextGray"
+            android:gravity="left|top"
+            android:textCursorDrawable="@drawable/edit_cursor_theme"
+            android:hint="请输入提示修改内容:"
+            android:textSize="@dimen/x32" />
+        <TextView
+            android:layout_marginTop="@dimen/x33"
+            android:id="@+id/tv_see_updata_list"
+            android:text="修改记录查看"
+            android:textSize="@dimen/x28"
+            android:textColor="@color/colorTextTheme"
+            android:layout_marginBottom="@dimen/x42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
+        <LinearLayout
+            android:paddingLeft="@dimen/x35"
+            android:paddingRight="@dimen/x35"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginBottom="@dimen/x10"
+            android:id="@+id/btn_tips_updata"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/x80"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_text_stroke"
+            android:gravity="center"
+            android:text="提示修改"
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x32" />
+            <Button
+                android:id="@+id/btn_ea_succ"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/x80"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_bg_selector"
+                android:gravity="center"
+                android:text="确定完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x32" />
+
+        </LinearLayout></RelativeLayout>
+</LinearLayout>

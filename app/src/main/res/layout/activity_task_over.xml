@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x322"
+                    android:layout_marginTop="@dimen/x58"
+                    android:background="@mipmap/icon_finish" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/x74"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x24"
+                    android:paddingRight="@dimen/x24">
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x45"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="任务名称"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="@dimen/x32" />
+
+                        <TextView
+                            android:id="@+id/tv_task_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="大洋名片"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x32" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x45"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/x50"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="预计完成时间"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="@dimen/x32" />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="2017/12/12"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x32" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x45"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/x50"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="分配积分"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="@dimen/x32" />
+
+                        <TextView
+                            android:id="@+id/tv_distribution_integral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x32" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x45"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/x50"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center"
+                            android:text="最终积分"
+                            android:textColor="@color/colorTheme"
+                            android:textSize="@dimen/x32" />
+
+                        <TextView
+                            android:id="@+id/tv_final_integral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x32" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/x50"
+                        android:background="@color/colorRecyItemGray"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x50"
+                        android:text="状态跟踪"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x36" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_task_track"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/x48"></android.support.v7.widget.RecyclerView>
+<LinearLayout
+    android:id="@+id/layout_star"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/x50"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_beauty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x50"
+                            android:gravity="center"
+                            android:text="美观度（30%）"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x28" />
+
+                        <com.dy.vam.ui.widget.StarBarView
+                            android:id="@+id/star_beauty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            app:space_width="@dimen/x31"
+                            app:star_height="@dimen/x50"
+                            app:star_hollow="@mipmap/icon_star"
+                            app:star_isIndicator="false"
+                            app:star_max="5"
+                            app:star_orientation="horizontal"
+                            app:star_solid="@mipmap/icon_star2"
+                            app:star_width="@dimen/x50" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/x45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_logic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x50"
+                            android:gravity="center"
+                            android:text="逻辑性（30%）"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x28" />
+
+                        <com.dy.vam.ui.widget.StarBarView
+                            android:id="@+id/star_logic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            app:space_width="@dimen/x31"
+                            app:star_height="@dimen/x50"
+                            app:star_hollow="@mipmap/icon_star"
+                            app:star_isIndicator="false"
+                            app:star_max="5"
+                            app:star_orientation="horizontal"
+                            app:star_solid="@mipmap/icon_star2"
+                            app:star_width="@dimen/x50" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/x160"
+                        android:layout_marginTop="@dimen/x45"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_complete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x50"
+                            android:gravity="center"
+                            android:text="完整性（40%）"
+                            android:textColor="@color/colorTextGray"
+                            android:textSize="@dimen/x28" />
+
+                        <com.dy.vam.ui.widget.StarBarView
+                            android:id="@+id/star_complete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            app:space_width="@dimen/x31"
+                            app:star_height="@dimen/x50"
+                            app:star_hollow="@mipmap/icon_star"
+                            app:star_isIndicator="false"
+                            app:star_max="5"
+                            app:star_orientation="horizontal"
+                            app:star_solid="@mipmap/icon_star2"
+                            app:star_width="@dimen/x50" />
+                    </RelativeLayout>
+
+
+                </LinearLayout></LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

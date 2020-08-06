@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x95">
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_depart_name"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorTheme"
+        android:layout_width="@dimen/x450"
+        android:layout_height="match_parent"
+        android:text="企划研发中心(15)"
+        android:textSize="@dimen/x32" />
+    <ImageView
+        android:id="@+id/img_delete_depart"
+        android:visibility="invisible"
+        android:background="@mipmap/icon_edit_441"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/x44"
+        android:layout_height="@dimen/x44" />
+</RelativeLayout>
+
+
+</LinearLayout>

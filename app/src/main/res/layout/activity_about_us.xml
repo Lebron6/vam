@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/toolbar" />
+
+    <ImageView
+        android:id="@+id/image_app_icon"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x150"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x88"
+        android:background="@drawable/logo_96" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/x37"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="V1.0.1"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/x32" />
+
+    <RelativeLayout
+        android:id="@+id/layout_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x148"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@drawable/layout_bg_my_value"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="软件协议"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/x30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_rignt_copy" />
+    </RelativeLayout>
+</LinearLayout>

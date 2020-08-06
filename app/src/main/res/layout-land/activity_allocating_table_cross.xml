@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top" android:id="@+id/view_status_bar"
+        android:background="@color/colorTheme"/>
+<com.dy.vam.ui.widget.StickyScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:tag="sticky"
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:gravity="left|center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x44"
+                android:layout_height="@dimen/x44"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@mipmap/icon_back_green" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text=" "
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x36" />
+
+        <RelativeLayout
+            android:id="@+id/layout_show_quarter_window"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_marginRight="@dimen/x48"
+            android:background="@drawable/layout_bg_time_select"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_quarter_banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x30"
+                android:text="---"
+                android:textColor="@color/colorTextTheme"
+                android:textSize="@dimen/x28" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x5"
+                android:background="@mipmap/icon_down_b" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <!-- 遮挡状态栏透明的部分 -->
+    <FrameLayout
+        android:id="@+id/frame_contant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout></LinearLayout></com.dy.vam.ui.widget.StickyScrollView>
+</LinearLayout>

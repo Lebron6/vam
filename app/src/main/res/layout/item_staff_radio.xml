@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="@color/colorBlack"
+        android:layout_weight="1.0"
+        android:paddingLeft="@dimen/x114"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80">
+        <CheckBox
+            android:id="@+id/cb_checked"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_gravity="center_vertical"
+            android:focusableInTouchMode="false"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_toRightOf="@+id/cb_checked"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x37"
+            android:id="@+id/image_icon"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80" />
+    <TextView
+
+        android:layout_toRightOf="@+id/image_icon"
+        android:id="@+id/tv_name"   android:layout_centerVertical="true"
+        android:textColor="@color/colorTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/x30"
+        android:layout_marginLeft="@dimen/x35"
+        android:text="王勇"/>
+        <TextView
+            android:layout_marginRight="@dimen/x24"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_position"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorTextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/x30"
+            android:layout_marginLeft="@dimen/x35"
+            android:text="董事长"/>
+    </RelativeLayout>
+
+</LinearLayout>

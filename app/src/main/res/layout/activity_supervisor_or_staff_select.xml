@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/toolbar" />
+
+<RelativeLayout
+    android:id="@+id/ll_search"
+    android:layout_below="@+id/toolBar"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/bg_auto_tv"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <AutoCompleteTextView
+        android:id="@+id/actv_search"
+        android:hint="请输入搜索姓名"
+        android:paddingLeft="50dp"
+        android:background="@null"
+        android:textSize="15sp"
+        android:textColor="@color/colorTextGray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/icon_search_w"
+        android:id="@+id/iv_search_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_supervisor"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_below="@+id/ll_search"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_checked_supervisor"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x25"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x86"
+            android:text="部门主管1级"
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x36" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_staffs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_below="@+id/layout_supervisor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:visibility="invisible"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x25"
+            android:checked="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x86"
+            android:text="指定成员"
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x36" />
+        <ImageView
+            android:layout_marginRight="@dimen/x24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_down_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_staff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layt_bg"
+        android:layout_below="@+id/layout_staffs"
+        android:layout_marginBottom="@dimen/x40"
+        android:divider="@color/white"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"></ListView>
+    <RelativeLayout
+        android:id="@+id/layt_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/x656"
+        android:layout_height="@dimen/x188"
+        android:background="@mipmap/btn"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x580"
+            android:layout_height="@dimen/x88"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="确认添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+</RelativeLayout>

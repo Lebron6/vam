@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginRight="@dimen/x80"
+            android:layout_centerVertical="true"
+            android:id="@+id/layout_show_time_window"
+            android:background="@drawable/layout_bg_time_select"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/x60">
+            <TextView
+                android:id="@+id/tv_time_banner"
+                android:text="---"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x28"
+                android:textColor="@color/colorTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="@dimen/x5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/icon_down_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x80"
+            android:layout_centerVertical="true"
+            android:id="@+id/layout_show_quarter_window"
+            android:background="@drawable/layout_bg_time_select"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x60">
+            <TextView
+                android:id="@+id/tv_quarter_banner"
+                android:text="---"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x28"
+                android:textColor="@color/colorTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="@dimen/x5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/icon_down_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+<HorizontalScrollView
+    android:id="@+id/hv_allocting_table"
+    android:scrollbars="none"
+    android:layout_above="@+id/btn_setting"
+    android:layout_below="@+id/layout_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorShollwGray"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x100">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/x154"
+            android:layout_height="match_parent"
+            android:gravity="center"  android:textColor="@color/colorTextTheme"
+            android:text="新增客户"
+            android:textSize="@dimen/x30" />
+
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:textColor="@color/colorTextTheme"
+            android:text="客户营业额"
+            android:layout_width="@dimen/x154"
+            android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:text="毛利润(元)"  android:textColor="@color/colorTextTheme"
+            android:layout_width="@dimen/x154"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/layout_check_all"
+            android:gravity="center"
+            android:layout_width="@dimen/x154"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:layout_centerVertical="true"
+                android:id="@+id/cb_checked_all"
+                style="@style/CustomCheckboxTheme"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cb_checked_all"
+                android:textSize="@dimen/x30"
+                android:gravity="center"
+                android:text="员工"  android:textColor="@color/colorTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:text="提成比例"  android:textColor="@color/colorTextTheme"
+            android:layout_width="@dimen/x154"
+            android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:text="提成金额"  android:textColor="@color/colorTextTheme"
+            android:layout_width="@dimen/x154"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_allocating_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</HorizontalScrollView>
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_setting"
+        android:layout_width="@dimen/x580"
+        android:layout_height="@dimen/x74"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x25"
+        android:background="@drawable/btn_bg_selector"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_above="@+id/tv_see_unassigned"
+        android:text="设为已分配"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/tv_see_unassigned"
+        android:text="查看未分配人员"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/colorTextTheme"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x42"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

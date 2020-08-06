@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTrWhite">#20ffffff</color>
+    <color name="colorRgWhite">#10ffffff</color>
+    <color name="colorEtGray">#F1F2F2</color>
+    <color name="colorTextGray">#969696</color>
+    <color name="colorPieLine">#979797</color>
+    <color name="colorTextShollwGray">#AEAEAE</color>
+    <color name="colorTheme">#295059</color>
+    <color name="colorTextTheme">#2CDA9C</color>
+    <color name="colorTextThemeShadow">#DFF9F0</color>
+    <color name="colorTextThemeShadow2">#F0FCF8</color>
+    <color name="colorTextThemeShollw">#902CDA9C</color>
+    <color name="colorLineColor1">#382CDA9C</color>
+    <color name="colorTrRed">#90FF0000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorTrGreen">#ff00bb00</color>
+    <color name="colorTrYellow">#90ffaa00</color>
+    <color name="colorShollwGray">#F0F0F2</color>
+    <color name="colorBlack">#ff222222</color>
+    <color name="Trans">#7f000000</color>
+    <color name="colorPieBGTrans">#99000000</color>
+    <color name="colorRecyItemGray">#D8D8D8</color>
+    <color name="colorTextYello">#F5A623</color>
+    <color name="colorTextRed">#C7433D</color>
+    <color name="colorTextRedTwo">#C7433D</color>
+    <color name="colorTextBlue">#0076FF</color>
+    <color name="colorDeselected">#fdfdfd</color>
+    <color name="ThemeTrans">#00000000</color>
+    <color name="colorHomeRadioButton">#2E364A</color>
+    <color name="colorTextHomeleftAxis">#498E9E</color>
+    <color name="colorLineHomeleftAxis">#555F83</color>
+    <color name="colorDepartLayout">#4D5465</color>
+
+
+</resources>

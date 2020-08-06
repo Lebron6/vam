@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    tools:visibility="visible">
+
+    <HorizontalScrollView
+    android:id="@+id/hv_allocting_table"
+    android:scrollbars="none"
+    android:layout_below="@+id/layout_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorShollwGray"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/y1334"
+        android:layout_height="@dimen/x98">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorTextTheme"
+            android:text="新增客户"
+            android:textSize="@dimen/x30" />
+
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:textColor="@color/colorTextTheme"
+            android:text="客户营业额"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:text="毛利润(元)"  android:textColor="@color/colorTextTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/layout_check_all"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_centerVertical="true"
+                android:id="@+id/cb_checked_all"
+                style="@style/CustomCheckboxTheme"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cb_checked_all"
+                android:textSize="@dimen/x30"
+                android:gravity="center"
+                android:text="员工"  android:textColor="@color/colorTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:text="提成比例"  android:textColor="@color/colorTextTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView android:textSize="@dimen/x30"
+            android:gravity="center"
+            android:text="提成金额"  android:textColor="@color/colorTextTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_allocating_table"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_vis"
+        android:layout_marginRight="@dimen/x52"
+        android:layout_marginBottom="@dimen/x100"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_toLeftOf="@+id/tv_see_unassigned"
+
+            android:id="@+id/btn_setting"
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/x72"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="设为已分配"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_see_unassigned"
+            android:text="查看未分配人员"
+            android:textSize="@dimen/x28"
+            android:gravity="center"
+
+            android:layout_marginLeft="@dimen/x17"
+            android:background="@drawable/btn_bg_text_stroke"
+            android:textColor="@color/colorTextTheme"
+            android:layout_width="@dimen/x250"
+            android:layout_height="@dimen/x72"/>
+    </RelativeLayout>
+</RelativeLayout>

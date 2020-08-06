@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">有价</string>
+    <string name="net_error">网络异常</string>
+    <string name="v_ud">此次更新内容：\n1.报销审批增加自动去重功能\n2.个人分配系数调整为可实时更新\n3.财务增加查看部门分配数据权限\n4.报销界面修改\n5.报销增加导出、打印功能\n6.部分功能优化</string>
+</resources>

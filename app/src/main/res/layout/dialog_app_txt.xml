@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x640"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_my_value"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x38"
+        android:text="有价App"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x52" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x36"
+        android:layout_marginRight="@dimen/x36"
+        android:layout_marginTop="@dimen/x36"
+        android:gravity="left"
+        android:padding="@dimen/x5"
+        android:lineSpacingExtra="10dp"
+        android:text="      有价App，是根据 “共同创造价值，共同分享价值”的经营理念所设计的平台系统。有价的设计，是以“利润最大化，成本最小化”的原则为核心，打造以部门为单位的经营中心，提升部门负责人的经营和管理能力，并培养员工参与经营的意识，提高员工创造价值的积极性，最终推进企业快速发展，并使员工分享公司发展的经营成果，是符合公开、公正、公平原则的企业利润分配平台系统，是最适用于创业型团队与企业的经营工具。
+" android:textColor="#5E8088"
+        android:textSize="@dimen/x25" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <CheckBox
+            android:id="@+id/cb_know"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="以后不再提醒"
+            android:textColor="#5E8088"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_know"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/x580"
+        android:layout_height="@dimen/x88"
+        android:background="@drawable/btn_bg_selector"
+        android:gravity="center"
+        android:text="知道了"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x32" />
+</LinearLayout>

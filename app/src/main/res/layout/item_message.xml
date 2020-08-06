@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/x24"
+    android:paddingRight="@dimen/x35"
+    android:paddingTop="@dimen/x60">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_pic"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:background="@mipmap/icon_touxiang90"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tv_main_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="报销审批"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/x32" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title"
+        android:layout_marginLeft="@dimen/x71"
+        android:layout_marginTop="@dimen/x29"
+        android:background="@drawable/layout_bg_my_value"
+        android:paddingLeft="@dimen/x43">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x24"
+                android:text="任务审批"
+                android:textColor="@color/colorTheme"
+                android:textSize="@dimen/x32" />
+            <TextView
+                android:id="@+id/tv_status_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x22"
+                android:text="您的任务申请已通过，请知晓"
+                android:textColor="@color/colorTheme"
+                android:textSize="@dimen/x28" />
+            <TextView
+                android:id="@+id/tv_user_info"
+                android:layout_marginTop="@dimen/x28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报销人：李1"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/x28" />
+
+            <TextView
+                android:id="@+id/tv_content_title"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报销类型：办公用品费"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/x28" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报销金额：200元"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/x28" />
+<RelativeLayout
+    android:layout_marginBottom="@dimen/x50"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待我审批"
+        android:textColor="@color/colorTextRed"
+        android:textSize="@dimen/x32" />
+    <TextView
+        android:id="@+id/tv_see_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x33"
+        android:singleLine="true"
+        android:text="查看更多"
+        android:textColor="@color/colorTextShollwGray"
+        android:textSize="@dimen/x24" />
+</RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x33"
+            android:layout_marginTop="@dimen/x31"
+            android:singleLine="true"
+            android:text="2017.12.08"
+            android:textColor="@color/colorTextShollwGray"
+            android:textSize="@dimen/x24" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

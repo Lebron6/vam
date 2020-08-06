@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+   <TextView
+       android:layout_width="match_parent" android:id="@+id/view_status_bar"
+       android:layout_height="@dimen/toolbar_margin_top"
+       android:background="@color/colorTheme"/>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:background="@color/colorWhite"
+       android:layout_height="wrap_content">
+
+      <com.dy.vam.ui.widget.TabNavitationLayout
+          android:layout_marginRight="@dimen/x92"
+          android:layout_toRightOf="@+id/layout_back"
+          android:layout_centerInParent="true"
+          android:gravity="center"
+          android:id="@+id/tab_examine_approve"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/x102"></com.dy.vam.ui.widget.TabNavitationLayout>
+
+      <LinearLayout
+          android:id="@+id/layout_back"
+          android:layout_alignParentLeft="true"
+          android:gravity="left|center_vertical"
+          android:layout_width="@dimen/x100"
+          android:layout_height="@dimen/x100">
+         <ImageView
+             android:layout_marginLeft="@dimen/x16"
+             android:background="@mipmap/icon_back_green"
+             android:layout_centerVertical="true"
+             android:layout_width="@dimen/x44"
+             android:layout_height="@dimen/x44" />
+      </LinearLayout>
+
+   </RelativeLayout>
+
+   <android.support.v4.view.ViewPager
+       android:id="@+id/vp_examine_approve"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

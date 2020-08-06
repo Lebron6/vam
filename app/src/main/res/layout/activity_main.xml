@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top"
+      />
+    <com.dy.vam.ui.widget.CustomViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="@color/colorShollwGray"/>
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x98"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_opera"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_opera_selector"
+            android:text="操作" />
+
+        <RadioButton
+            android:id="@+id/rb_department"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_department_selector"
+            android:text="部门" />
+
+        <RadioButton
+            android:id="@+id/rb_mcenter"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/tab_self_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

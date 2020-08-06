@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar" android:id="@+id/toolBar"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/x65"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:id="@+id/layout_updata_phonenum"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@drawable/layout_bg_my_value"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88">
+        <TextView
+            android:layout_centerVertical="true"
+            android:text="更换手机号"
+            android:textSize="@dimen/x30"
+            android:textColor="@color/colorTextGray"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/icon_rignt_copy"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <RelativeLayout  android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:id="@+id/layout_updata_password"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/layout_bg_my_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="修改密码"
+                android:textSize="@dimen/x30"
+                android:textColor="@color/colorTextGray"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:background="@mipmap/icon_rignt_copy"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:id="@+id/layout_feed_back"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/layout_bg_my_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="意见反馈"
+                android:textSize="@dimen/x30"
+                android:textColor="@color/colorTextGray"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:background="@mipmap/icon_rignt_copy"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:id="@+id/layout_about"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/layout_bg_my_value"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88">
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="关于我们"
+                android:textSize="@dimen/x30"
+                android:textColor="@color/colorTextGray"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:background="@mipmap/icon_rignt_copy"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login_out"
+        android:layout_marginTop="@dimen/x80"
+        android:textColor="@color/colorTextTheme"
+        android:text="退出登录"
+        android:layout_marginRight="@dimen/x55"
+        android:layout_marginLeft="@dimen/x55"
+        android:background="@drawable/btn_bg_text_stroke"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88" /></LinearLayout>
+</LinearLayout>

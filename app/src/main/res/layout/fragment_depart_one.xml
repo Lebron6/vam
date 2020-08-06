@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@mipmap/img_bumen">
+
+        <TextView
+            android:id="@+id/view_status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_margin_top"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_status_bar"
+            android:layout_marginTop="@dimen/x20">
+
+            <ImageView
+                android:id="@+id/image_slide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:background="@mipmap/slide_icon" />
+
+            <TextView
+                android:id="@+id/tv_depart_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x22"
+                android:layout_toRightOf="@+id/image_slide"
+                android:text="泰格丽莎"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/x42" />
+
+            <ImageView
+                android:id="@+id/image_staff_manger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x24"
+                android:background="@mipmap/icon_chengyuan" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_bottom"
+            android:layout_below="@+id/layout_top">
+
+            <ImageView
+                android:id="@+id/image_outside"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/x400"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/yuan_1" />
+
+            <ImageView
+                android:id="@+id/image_inside"
+                android:layout_width="@dimen/x400"
+                android:layout_height="@dimen/x400"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/yuan_2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_distribution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/colorTextTheme"
+                    android:textSize="@dimen/x52"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x14"
+                    android:text="部门可分配价值"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/x32" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x280"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorDepartLayout"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_income"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_proportion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x32"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x14"
+                        android:text="部门分配系数"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x28" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2"
+                    android:background="@color/colorLineHomeleftAxis" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_control_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x32"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x14"
+                        android:text="部门可支配收入"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x28" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x2"
+                android:layout_height="match_parent"
+                android:background="@color/colorLineHomeleftAxis" />
+
+            <LinearLayout
+                android:id="@+id/layout_cost"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"> <TextView
+                    android:id="@+id/tv_company_distrubution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="---"
+                    android:textColor="@color/colorTextTheme"
+                    android:textSize="@dimen/x32"
+                    android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x14"
+                        android:text="年度分配系数"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x28" /></LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2"
+                    android:background="@color/colorLineHomeleftAxis" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_control_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="---"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x32"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x14"
+                        android:text="部门可控制成本"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x28" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x57"
+            android:layout_marginTop="@dimen/x58"
+            android:text="部门最新动态"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x57"
+            android:layout_marginTop="@dimen/x108"
+            android:text="可详细查看部门的收入支出明细"
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/x32" />
+
+        <View
+            android:layout_width="@dimen/x8"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x109"
+            android:background="@color/colorShollwGray" />
+
+        <ImageView
+            android:id="@+id/image_new_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x64"
+            android:background="@mipmap/icon_dongtai" />
+
+        <ImageView
+            android:id="@+id/image_mini_red"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/x95"
+            android:layout_marginRight="@dimen/x68"
+            android:background="@drawable/icon_mini_circle_red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorTextTheme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x57"
+            android:text="本部门分配机制："
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/x32" />
+
+        <TextView
+            android:id="@+id/tv_system_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x338"
+            android:text="---"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/x32" />
+
+        <ImageView
+            android:id="@+id/tv_system_details"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/x60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x84"
+            android:background="@mipmap/icon_detail" />
+    </RelativeLayout>
+</LinearLayout>

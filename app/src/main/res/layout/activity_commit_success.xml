@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+<include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:background="@mipmap/img_submit"
+        android:layout_marginTop="@dimen/x101"
+        android:layout_width="@dimen/x282"
+        android:layout_height="@dimen/x231" />
+    <TextView
+        android:textSize="@dimen/x32"
+        android:textColor="@color/colorTheme"
+        android:layout_marginTop="@dimen/x47"
+        android:text="提交成功,等待审批！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

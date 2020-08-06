@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar" android:id="@+id/toolBar"/>
+    <ListView
+        android:layout_above="@+id/layt_bg"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginBottom="@dimen/x40"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@color/white"
+        android:id="@+id/lv_staff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <RelativeLayout
+        android:id="@+id/layt_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/x656"
+        android:layout_height="@dimen/x188"
+        android:background="@mipmap/btn"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_commit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x580"
+            android:layout_height="@dimen/x88"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_selector"
+            android:gravity="center"
+            android:text="确认添加"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+</RelativeLayout>

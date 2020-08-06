@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/x24"
+    android:paddingRight="@dimen/x30"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_marginTop="@dimen/x35"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x45">
+    <TextView
+        android:id="@+id/tv_customer_type"
+        android:textSize="@dimen/x32"
+        android:text="新增客户"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:layout_marginLeft="@dimen/x130"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x32"
+        android:text="阿里巴巴马云"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/x41"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x33">
+<TextView
+    android:id="@+id/tv_commiter_name"
+    android:textSize="@dimen/x24"
+    android:text="提交人：营销主管 王源"
+    android:textColor="@color/colorTextGray"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/x24"
+            android:text="2018.1.17"
+            android:textColor="@color/colorTextGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="@dimen/x30"
+        android:background="@color/colorRecyItemGray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

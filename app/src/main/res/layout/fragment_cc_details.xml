@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorTheme"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x264">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90">
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:textSize="@dimen/x64"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="-"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_marginLeft="@dimen/x20"
+                    android:textSize="@dimen/x28"
+                    android:textColor="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="元"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <TextView
+                android:textSize="@dimen/x30"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"
+                android:text="财务部门工资费用"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@color/white"
+            android:id="@+id/tv_depart_number"
+            android:textColor="@color/colorTextTheme"
+            android:paddingLeft="@dimen/x36"
+            android:gravity="center_vertical"
+            android:text="-"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/colorRecyItemGray"/>
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/colorWhite"
+            android:paddingRight="@dimen/x24"
+            android:paddingLeft="@dimen/x24"
+            android:id="@+id/rv_person_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:layout_marginTop="@dimen/x20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x23">
+
+<ImageView
+    android:id="@+id/image_remove"
+    android:background="@mipmap/icon_remove"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_toRightOf="@+id/image_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="王勇"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/x32" />
+
+        <RelativeLayout
+            android:id="@+id/layout_show_percent_window"
+            android:layout_width="@dimen/x440"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_toRightOf="@+id/tv_position"
+            android:background="@drawable/et_bg_gray">
+
+            <TextView
+                android:id="@+id/tv_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x24"
+                android:hint="设置提成比例"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/x28" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x12"
+                android:background="@mipmap/icon_down_b" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

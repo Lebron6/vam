@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/layout_tab"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorTheme"
+                    android:layout_height="@dimen/x100">
+                    <ImageButton
+                        android:id="@+id/image_question"
+                        android:visibility="invisible"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/x100"
+                        android:layout_height="@dimen/x100"
+                        android:layout_alignParentLeft="true"
+                        android:src="@mipmap/question_gray" />
+                    <com.dy.vam.ui.widget.NavitationScrollLayout
+                        android:id="@+id/tab_depart"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/x100"
+                        android:layout_marginRight="@dimen/x100">
+
+                    </com.dy.vam.ui.widget.NavitationScrollLayout>
+                    <ImageButton
+                        android:id="@+id/image_message"
+                        android:layout_centerVertical="true"
+                        android:layout_width="@dimen/x100"
+                        android:layout_height="@dimen/x100"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/icon_infor"
+                        android:background="@null"
+                        />
+                </RelativeLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_department_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>

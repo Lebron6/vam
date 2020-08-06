@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+   <include layout="@layout/toolbar" android:id="@+id/layoutBar"/>
+   <com.liaoinstan.springview.widget.SpringView
+       android:layout_below="@+id/layoutBar"
+       android:id="@+id/sv_message"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_message"
+          android:scrollbars="none"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </android.support.v7.widget.RecyclerView>
+   </com.liaoinstan.springview.widget.SpringView>
+   <RelativeLayout
+       android:visibility="gone"
+       android:id="@+id/layout_data_null"
+       android:layout_below="@+id/layoutBar"
+       android:background="@color/white"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <ImageView
+          android:id="@+id/image_null"
+          android:layout_marginTop="@dimen/x110"
+          android:layout_marginLeft="@dimen/x298"
+          android:background="@mipmap/img_norecord"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:textSize="@dimen/x32"
+          android:textColor="@color/colorTheme"
+          android:text="暂无数据"
+          android:layout_below="@+id/image_null"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+   </RelativeLayout>
+</RelativeLayout>

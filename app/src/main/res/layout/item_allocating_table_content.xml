@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<LinearLayout
+    android:layout_marginTop="@dimen/x20"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:text="王勇"
+        android:textColor="@color/colorTheme"
+        android:gravity="top|center_horizontal"
+        android:layout_width="@dimen/x154"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_customer_turnover"
+        android:text="2000万"
+        android:textColor="@color/colorTheme"
+        android:gravity="top|center_horizontal"
+        android:layout_width="@dimen/x154"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_gross_profit"
+        android:text="1999万"
+        android:textColor="@color/colorTheme"
+        android:gravity="top|center_horizontal"
+        android:layout_width="@dimen/x154"
+        android:layout_height="match_parent" />
+    <android.support.v7.widget.RecyclerView android:descendantFocusability="afterDescendants"
+        android:id="@+id/lv_staff"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:layout_width="@dimen/x154"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_proportions"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:layout_width="@dimen/x154"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_money"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:layout_width="@dimen/x154"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
+
+</LinearLayout>

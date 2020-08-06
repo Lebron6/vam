@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent" android:id="@+id/view_status_bar"
+        android:layout_height="@dimen/toolbar_margin_top"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x560"
+        android:layout_marginTop="@dimen/x168"></android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/tv_guide_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x60"
+        android:gravity="center"
+        android:text="相信自己，一切就皆有可能。"
+        android:textColor="@color/colorTextTheme"
+        android:textSize="@dimen/x40" />
+    <TextView
+        android:id="@+id/tv_guide_content_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:gravity="center"
+        android:text="相信自己，一切就皆有可能。"
+        android:textColor="@color/colorTextTheme"
+        android:textSize="@dimen/x25" />
+
+    <RadioGroup
+        android:id="@+id/rg_guide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x18"
+        android:layout_marginTop="@dimen/x55"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_one"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:background="@drawable/radio_guide_selector"
+            android:button="@null"
+            android:checked="true" />
+
+        <RadioButton android:id="@+id/rb_two"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginRight="@dimen/x14"
+            android:background="@drawable/radio_guide_selector"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rb_three"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:layout_marginRight="@dimen/x14"
+            android:background="@drawable/radio_guide_selector"
+            android:button="@null" />
+        <RadioButton
+            android:id="@+id/rb_four"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/x16"
+            android:background="@drawable/radio_guide_selector"
+            android:button="@null" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_to_login"
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/x80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x55"
+        android:background="@drawable/btn_bg_text_stroke"
+        android:gravity="center"
+        android:text="登录"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/colorTextTheme"
+        android:textSize="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/tv_to_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x30"
+        android:gravity="center"
+        android:text="没有帐号,去注册"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/x32" />
+</LinearLayout>

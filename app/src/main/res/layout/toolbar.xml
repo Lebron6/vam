@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_height="wrap_content">
+    <TextView android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top"
+        android:background="@color/white"/>
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:gravity="left|center_vertical"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100">
+            <ImageView
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@mipmap/icon_back_green"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/x44"
+                android:layout_height="@dimen/x44" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text=" "
+            android:textStyle="bold"
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x36" />
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/layout_question"
+            android:gravity="right|center_vertical"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100">
+            <ImageView
+                android:background="@mipmap/question_gray"
+                android:layout_marginRight="@dimen/x21"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/x44"
+                android:layout_height="@dimen/x44" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/layout_notice"
+            android:gravity="right|center_vertical"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100">
+            <ImageView
+                android:background="@mipmap/icon_infor"
+                android:layout_marginRight="@dimen/x21"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_commit"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_width="@dimen/x100"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_right_title"
+                android:textSize="@dimen/x30"
+                android:text="完成"
+                android:textColor="@color/colorTextTheme"
+                android:layout_marginRight="@dimen/x21"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- 遮挡状态栏透明的部分 -->
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/toolbar_margin_top" android:id="@+id/view_status_bar"
+       android:background="@color/colorTheme"/>
+   <com.dy.vam.ui.widget.StickyNavLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   <RelativeLayout
+       android:id="@id/id_stickynavlayout_topview"
+       android:layout_width="match_parent"
+       android:background="@color/colorWhite"
+       android:layout_height="wrap_content">
+      <LinearLayout
+          android:id="@+id/layout_back"
+          android:layout_alignParentLeft="true"
+          android:gravity="left|center_vertical"
+          android:layout_width="@dimen/x70"
+          android:layout_height="@dimen/x70">
+         <ImageView
+             android:layout_marginLeft="@dimen/x16"
+             android:background="@mipmap/icon_back_green"
+             android:layout_centerVertical="true"
+             android:layout_width="@dimen/x44"
+             android:layout_height="@dimen/x44" />
+      </LinearLayout>
+      <com.dy.vam.ui.widget.NavitationScrollLayout
+          android:layout_centerInParent="true"
+          android:gravity="center"
+         android:id="@+id/layout_scroll"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/x70"></com.dy.vam.ui.widget.NavitationScrollLayout>
+      <TextView
+          android:id="@+id/tv_year"
+          android:layout_toRightOf="@+id/layout_scroll"
+          android:textSize="@dimen/x28"
+          android:text="2018"
+          android:layout_marginLeft="@dimen/x108"
+          android:layout_centerVertical="true"
+          android:textColor="@color/colorTextGray"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+      <RelativeLayout
+          android:layout_marginRight="@dimen/x48"
+          android:layout_alignParentRight="true"
+          android:gravity="center"
+          android:layout_marginLeft="@dimen/x80"
+          android:layout_centerVertical="true"
+          android:id="@+id/layout_show_quarter_window"
+          android:background="@drawable/layout_bg_time_select"
+          android:layout_width="@dimen/x180"
+          android:layout_height="@dimen/x60">
+         <TextView
+             android:id="@+id/tv_quarter_banner"
+             android:text="---"
+             android:layout_marginLeft="@dimen/x30"
+             android:layout_centerVertical="true"
+             android:textSize="@dimen/x28"
+             android:textColor="@color/colorTextTheme"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <ImageView
+             android:layout_marginRight="@dimen/x5"
+             android:layout_centerVertical="true"
+             android:layout_alignParentRight="true"
+             android:background="@mipmap/icon_down_b"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </RelativeLayout>
+   </RelativeLayout>
+      <View
+          android:id="@+id/id_stickynavlayout_indicator"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"/>
+   <com.dy.vam.ui.widget.CustomViewPager
+       android:id="@id/id_stickynavlayout_viewpager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"></com.dy.vam.ui.widget.CustomViewPager>
+   </com.dy.vam.ui.widget.StickyNavLayout>
+</LinearLayout>

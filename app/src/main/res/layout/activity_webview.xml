@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/toolbar" />
+    <com.just.agentweb.WebProgress
+        android:id="@+id/wp_progress"
+        android:background="@color/colorTextTheme"
+        android:layout_below="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"></com.just.agentweb.WebProgress>
+    <LinearLayout
+        android:layout_below="@+id/titlebar"
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+</RelativeLayout>

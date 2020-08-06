@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top" />
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginTop="@dimen/x31"
+        android:background="@mipmap/icon_back_green"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x31"
+        android:text="登录"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x40" />
+
+    <EditText
+        android:id="@+id/et_account"
+        android:layout_width="@dimen/x670"
+        android:layout_height="@dimen/x100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x89"
+        android:background="@drawable/et_bg_gray"
+        android:gravity="left|center_vertical"
+        android:hint="手机号"
+        android:paddingLeft="@dimen/x20"
+        android:singleLine="true"
+        android:textColor="@color/colorTextGray"
+        android:textColorHint="@color/colorTextShollwGray"
+        android:textCursorDrawable="@drawable/edit_cursor_theme" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="@dimen/x670"
+        android:layout_height="@dimen/x100"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@drawable/et_bg_gray"
+        android:gravity="left|center_vertical"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/x20"
+        android:singleLine="true"
+        android:textColor="@color/colorTextGray"
+        android:textColorHint="@color/colorTextShollwGray"
+        android:textCursorDrawable="@drawable/edit_cursor_theme" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/x656"
+        android:layout_height="@dimen/x188"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_login"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/x580"
+            android:layout_height="@dimen/x88"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_text_stroke"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x32" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="忘记密码？"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/x28" />
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/x74"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24">
+    <RelativeLayout
+
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x45">
+
+        <TextView
+            android:textSize="@dimen/x32"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorTheme"
+            android:text="任务名称"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_task_name"
+            android:textSize="@dimen/x32"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorTextGray"
+            android:text="-"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x45">
+
+            <TextView
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="负责人"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_charger_name"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorTextGray"
+                android:text="-"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="@dimen/x50"
+            android:textSize="@dimen/x32"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/colorTextGray"
+            android:text="考核标准"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x50"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50">
+            <TextView
+                android:id="@+id/tv_beauty"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="美观度（30%）"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.dy.vam.ui.widget.StarBarView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/star_beauty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:space_width="@dimen/x31"
+                app:star_height="@dimen/x50"
+                app:star_hollow="@mipmap/icon_star"
+                app:star_isIndicator="false"
+                app:star_max="5" app:star_rating="1"
+                app:star_orientation="horizontal"
+                app:star_solid="@mipmap/icon_star2"
+                app:star_width="@dimen/x50"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x45"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50">
+            <TextView
+                android:id="@+id/tv_logic"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="逻辑性（30%）"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.dy.vam.ui.widget.StarBarView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/star_logic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:space_width="@dimen/x31"
+                app:star_height="@dimen/x50"
+                app:star_hollow="@mipmap/icon_star"
+                app:star_isIndicator="false"
+                app:star_max="5" app:star_rating="1"
+                app:star_orientation="horizontal"
+                app:star_solid="@mipmap/icon_star2"
+                app:star_width="@dimen/x50"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x45"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50">
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x32"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorTheme"
+                android:text="完整性（40%）"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.dy.vam.ui.widget.StarBarView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/star_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:space_width="@dimen/x31"
+                app:star_height="@dimen/x50"
+                app:star_width="@dimen/x50"
+                app:star_rating="1"
+                app:star_hollow="@mipmap/icon_star"
+                app:star_isIndicator="false"
+                app:star_max="5"
+                app:star_orientation="horizontal"
+                app:star_solid="@mipmap/icon_star2"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x200"
+            android:layout_width="@dimen/x656"
+            android:layout_height="@dimen/x188"
+            android:background="@mipmap/btn"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_commit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/x580"
+                android:layout_height="@dimen/x88"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_bg_selector"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="@dimen/x32" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

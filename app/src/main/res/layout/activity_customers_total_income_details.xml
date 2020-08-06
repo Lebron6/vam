@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/view_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_margin_top"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/colorTheme">
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:gravity="left|center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x44"
+                android:layout_height="@dimen/x44"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x16"
+                android:background="@mipmap/icon_back_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x557"
+        android:background="@color/colorTheme">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lc_customers_total_income_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/x70"
+            android:layout_marginBottom="@dimen/x41"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"></com.github.mikephil.charting.charts.LineChart>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x25"
+                android:textColor="@color/colorTextTheme"
+                android:textSize="@dimen/x36" />
+
+            <RelativeLayout
+                android:id="@+id/layout_show_time_window"
+                android:layout_width="@dimen/x140"
+                android:layout_height="@dimen/x60"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x75"
+                android:background="@drawable/layout_bg_time_select"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_time_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/x24"
+                    android:text="-"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/x28" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x12"
+                    android:background="@mipmap/icon_down_w" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_customers_total_income_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

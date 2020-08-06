@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x670"
+                android:background="@color/colorTheme">
+<View
+    android:id="@+id/view_guide"
+    android:layout_centerInParent="true"
+    android:layout_width="@dimen/x500"
+    android:layout_height="@dimen/x500"/>
+                <RelativeLayout
+                    android:id="@+id/layout_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x86"
+                   >
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x269"
+                        android:gravity="center"
+                        android:text="职位"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x36" />
+
+                    <RelativeLayout
+                        android:id="@+id/layout_show_time_window"  android:layout_centerVertical="true"
+                        android:layout_width="@dimen/x115"
+                        android:layout_height="@dimen/x41"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginRight="@dimen/x24"
+                        android:layout_toRightOf="@+id/tv_position"
+                        android:background="@drawable/layout_bg_time_select">
+
+                        <TextView
+                            android:id="@+id/tv_time_banner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x15"
+                            android:text="-"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/x28" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@mipmap/icon_down_w" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_to_noun_interpretation"
+                        android:layout_width="@dimen/x86"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageButton
+                            android:id="@+id/image_to_noun_interpretation"
+                            android:layout_centerVertical="true"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/x14"
+                            android:background="@mipmap/question_w" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_message"
+                        android:layout_width="@dimen/x86"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true">
+
+                        <ImageButton
+                            android:id="@+id/image_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerInParent="true"
+                            android:background="@mipmap/icon_infor" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_ie_unit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x33"
+                    android:layout_below="@+id/layout_spinner"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_company_revenue"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="公司总收入(万元)"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x24" />
+
+                    <TextView
+                        android:id="@+id/tv_company_expenditure"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="公司总支出(万元)"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x24" />
+
+                    <TextView
+                        android:id="@+id/tv_disposable_income"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="可支配总收入(万元)"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_ie_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x51"
+                    android:layout_below="@+id/layout_ie_unit"
+                    android:layout_marginTop="@dimen/x2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_company_revenue_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/colorTextTheme"
+                        android:textSize="@dimen/x36"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_company_expenditure_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x36"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_disposable_income_num"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x36"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_recy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x343"
+                    android:layout_below="@+id/layout_ie_number"
+                    android:layout_marginLeft="@dimen/x55"
+                    android:layout_marginRight="@dimen/x65"
+                    android:layout_marginTop="@dimen/x15"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_ie_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x56"
+                    android:layout_below="@+id/layout_recy"
+                    android:layout_marginTop="@dimen/x8">
+
+                    <Button
+                        android:id="@+id/tv_see_detail"
+                        android:layout_width="@dimen/x150"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x26"
+                        android:background="@drawable/tv_bg_details"
+                        android:gravity="center"
+                        android:text="查看详情"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/x28" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_my_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x230"
+                android:layout_marginTop="@dimen/x621"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x25"
+                android:background="@drawable/layout_bg_my_value"
+               >
+
+                <ImageView
+                    android:id="@+id/image_user_icon"
+                    android:layout_width="@dimen/x90"
+                    android:layout_height="@dimen/x90"
+                    android:layout_marginLeft="@dimen/x52"
+                    android:layout_marginTop="@dimen/x34"
+                    android:background="@mipmap/icon_touxiang90" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x181"
+                    android:layout_marginTop="@dimen/x55"
+                    android:text="我的价值分配"
+                    android:textColor="@color/colorTextTheme"
+                    android:textSize="@dimen/x36" />
+
+
+                <TextView
+                    android:id="@+id/tv_total_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x52"
+                    android:layout_marginTop="@dimen/x152"
+                    android:text="个人可分配价值总额"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="@dimen/x28" />
+
+                <TextView
+                    android:id="@+id/tv_total_distributable_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x358"
+                    android:layout_marginTop="@dimen/x134"
+                    android:singleLine="true"
+                    android:text="￥-"
+                    android:textColor="@color/colorTheme"
+                    android:textSize="@dimen/x48"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x553"
+                android:layout_marginTop="@dimen/x20"
+                android:layout_below="@+id/layout_my_value"
+                android:layout_marginBottom="@dimen/x27"
+                android:layout_marginLeft="@dimen/x25"
+                android:layout_marginRight="@dimen/x25"
+                android:background="@drawable/layout_bg_my_value"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x35"
+                    android:text="最新动态"
+                    android:textColor="@color/colorTheme"
+                    android:textSize="@dimen/x32" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x116"
+                    android:text="-时间-"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="@dimen/x28" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_new_dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x108"
+                    android:layout_marginLeft="@dimen/x18"
+                    android:layout_marginRight="@dimen/x21"
+                    android:layout_marginTop="@dimen/x175"></android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tv_lunch_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x60"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/x31"
+                    android:gravity="center"
+                    android:text="查看更多"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="@dimen/x24" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+</LinearLayout>

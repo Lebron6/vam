@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+<LinearLayout
+    android:layout_marginTop="@dimen/x42"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="王勇"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x28" />
+
+    <TextView
+        android:id="@+id/tv_postion"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="董事长"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x28" />
+
+    <TextView
+        android:id="@+id/tv_proportion"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1%"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x28" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="一块钱"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/x28" />
+</LinearLayout>
+</RelativeLayout>

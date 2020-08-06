@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+   <RelativeLayout
+       android:id="@+id/toolBar"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x100"
+       android:background="@color/colorTheme"
+       >
+
+      <TextView
+          android:id="@+id/toolbar_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_gravity="center"
+          android:singleLine="true"
+          android:text="工作"
+          android:textColor="@color/colorWhite"
+          android:textSize="@dimen/x36" />
+
+      <ImageButton
+          android:id="@+id/image_message"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="@dimen/x21"
+          android:background="@mipmap/icon_infor" />
+   </RelativeLayout>
+
+   <TextView
+    android:paddingLeft="@dimen/x23"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/x32"
+    android:text="通用"
+    android:textColor="@color/colorBlack"
+    android:layout_marginTop="@dimen/x55"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x45" />
+
+   <LinearLayout
+       android:paddingLeft="@dimen/x24"
+       android:paddingRight="@dimen/x24"
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/x30"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x200">
+      <LinearLayout
+          android:id="@+id/layout_examination_and_approval"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:layout_marginRight="@dimen/x9"
+          android:background="@drawable/layout_bg_my_value"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+         <ImageView
+             android:background="@mipmap/icon_exam"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="@dimen/x25"
+             android:text="审批"
+             android:textColor="@color/colorTheme"
+             android:textSize="@dimen/x36"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/layout_expense_reimbursement"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:layout_marginLeft="@dimen/x9"
+          android:background="@drawable/layout_bg_my_value"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+         <ImageView
+             android:background="@mipmap/icon_baoxiao"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="@dimen/x25"
+             android:text="费用报销"
+             android:textColor="@color/colorTheme"
+             android:textSize="@dimen/x36"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </LinearLayout>
+   </LinearLayout>
+   <TextView
+       android:paddingLeft="@dimen/x23"
+       android:gravity="center_vertical"
+       android:textSize="@dimen/x32"
+       android:text="财务"
+       android:textColor="@color/colorBlack"
+       android:layout_marginTop="@dimen/x55"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x45" />
+
+
+   <LinearLayout
+       android:paddingLeft="@dimen/x24"
+       android:paddingRight="@dimen/x24"
+       android:orientation="horizontal"
+       android:layout_marginTop="@dimen/x30"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x200">
+      <LinearLayout
+          android:id="@+id/layout_financial_input"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="@drawable/layout_bg_my_value"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+         <ImageView
+             android:background="@mipmap/icon_caiwu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="@dimen/x13"
+             android:text="财务录入"
+             android:textColor="@color/colorTheme"
+             android:textSize="@dimen/x32"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/layout_business_promotion"
+          android:layout_marginLeft="@dimen/x20"
+          android:layout_marginRight="@dimen/x20"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="@drawable/layout_bg_my_value"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+         <ImageView
+             android:background="@mipmap/icon_yewu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+         <TextView
+             android:layout_marginTop="@dimen/x13"
+             android:text="业务提成录入"
+             android:textColor="@color/colorTheme"
+             android:textSize="@dimen/x28"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+          android:id="@+id/layout_value_distribution_input"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:background="@drawable/layout_bg_my_value"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="match_parent">
+         <ImageView
+             android:background="@mipmap/icon_value"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:id="@+id/textView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/x13"
+             android:text="价值分配录入"
+             android:textColor="@color/colorTheme"
+             android:textSize="@dimen/x28"/>
+      </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':MPChartLib', ':guideview', ':slidingmenu_library','multi-image-selector'

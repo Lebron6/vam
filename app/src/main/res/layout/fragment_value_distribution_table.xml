@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/view_guide"
+        android:layout_centerInParent="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <RelativeLayout
+        android:id="@+id/layout_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_select_all"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x26" />
+
+        <TextView
+            android:id="@+id/tv_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_toRightOf="@+id/cb_select_all"
+            android:text="全选"
+            android:textColor="@color/colorTextTheme"
+            android:textSize="@dimen/x32" />
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x75"
+            android:id="@+id/layout_show_time_window"
+            android:background="@drawable/layout_bg_time_select"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/x60">
+            <TextView
+                android:id="@+id/tv_time_banner"
+                android:text="---"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/x28"
+                android:textColor="@color/colorTextTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginRight="@dimen/x5"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/icon_down_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.dy.vam.ui.widget.PanelListLayout
+        android:layout_above="@+id/btn_setting"
+        android:layout_below="@+id/layout_one"
+        android:id="@+id/id_pl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/id_lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:fastScrollEnabled="false"
+            android:overScrollMode="never" />
+
+    </com.dy.vam.ui.widget.PanelListLayout>
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_setting"
+        android:layout_width="@dimen/x580"
+        android:layout_height="@dimen/x74"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x25"
+        android:background="@drawable/btn_bg_selector"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/x20"
+      android:layout_above="@+id/tv_see_unassigned"
+        android:text="设为已分配"
+        android:textColor="@color/white"
+        android:textSize="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/tv_see_unassigned"
+        android:text="查看未分配人员"
+        android:textSize="@dimen/x28"
+        android:textColor="@color/colorTextTheme"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/x42"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

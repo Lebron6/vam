@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/toolbar" android:id="@+id/toolBar"/>
+    <ScrollView
+        android:id="@+id/sv_organizationa_structure"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:paddingLeft="@dimen/x24"
+        android:paddingRight="@dimen/x24"
+        android:id="@+id/rv_all_depart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+<LinearLayout
+    android:layout_marginTop="@dimen/x40"
+    android:id="@+id/layout_add_depart"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x24"
+    android:paddingRight="@dimen/x24"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x80">
+    <ImageView
+        android:background="@mipmap/btn_add"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80" />
+    <TextView
+        android:textSize="@dimen/x32"
+        android:layout_marginLeft="@dimen/x27"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorTextTheme"
+        android:text="添加部门"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <View
+        android:background="@color/colorShollwGray"
+        android:layout_marginTop="@dimen/x21"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <ListView
+        android:layout_marginBottom="@dimen/x40"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@color/white"
+        android:paddingTop="@dimen/x20"
+        android:paddingRight="@dimen/x24"
+        android:paddingLeft="@dimen/x24"
+        android:id="@+id/lv_staff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView></LinearLayout></ScrollView>
+</LinearLayout>
